@@ -95,7 +95,7 @@ public class DodgeAPP extends BasicGame {
                 System.out.println("Added segment");
                 final int amount = random.nextInt(8) + 3;
                 IntStream.range(0,amount).forEach(i -> {
-                    asteroids.add(new RenderAsteroid(random.nextInt(gameContainer.getWidth() - 50) - 100, -((random.nextInt(500) + 300)- 300),this));
+                    asteroids.add(new RenderAsteroid(random.nextInt(gameContainer.getWidth() - 15) - 30, -((random.nextInt(500) + 300)- 300),this));
                 });
                 backgroundSegments.add(0);
             }
